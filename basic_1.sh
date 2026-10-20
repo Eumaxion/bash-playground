@@ -58,23 +58,6 @@ do
 	fi
 done
 
-#_______ testing math ___
-while true
-do
-	sleep 1
-	echo ""
-	echo -e "$redwhite calculator: $reset"
-	read -p "first number: " a
-	read -p "second number: " b
-	read -p "operation (+, _, *, / or %): " op
-	res=$((a "$op" b))
-	echo "$a * $b = -> $res"
-	read -p "continue? y or n: " x
-	if [ "$x" == "n" ]; then
-		break
-	fi
-done
-
 sleep 1
 echo ""
 echo -e "$green using functions && files flags $reset"
